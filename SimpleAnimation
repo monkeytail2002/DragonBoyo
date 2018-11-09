@@ -2,7 +2,7 @@
  * Angus MacDonald 15009351
  * Tutor: Karen MacKay
  * DragonBoyo
- * Version 1.0 09/11/18
+ * Version 2.0 09/11/18
  */
 
 package musicplayer;
@@ -53,8 +53,8 @@ public class SimpleAnimation {
 
 		 public void paintComponent(Graphics g) {
 		 Image image = new ImageIcon("C:\\Users\\15009351\\Desktop\\Dragonboyo.png").getImage();
-		 g.setColor(Color.white);
-		 g.fillRect(0,0,this.getWidth(),this.getHeight());
+		 Image backImage = new ImageIcon("C:\\Users\\15009351\\Desktop\\dragonbackground.jpeg").getImage();
+		 g.drawImage(backImage, 0, 0, this.getWidth(), this.getHeight(), this);
 		 
 		 g.drawImage(image,x,y,100,100,this);
 		 
